@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Penndale Group | Technology Consultants</title>
+  <meta name="description" content="Penndale Group technology consultancy services — Enterprise Technology | Cybersecurity | Operational Resilience" />
+
+  <style>
+    :root{
+      --bg: #6C7A8C;
+      /* --bg: #FFFFFF; */
+      --fg: #0f172a;      /* slate-900-ish */
+      /* --fg: #FFFFFF; */
+      --muted: #0f172a;   /* slate-600-ish */
+      /* --muted: FFFFFFD9; */
+      /* #--muted: FFFFFFFF; */
+      /* #--max-logo-w: 420px; */
+      --max-logo-w: 520px;
+      --pad: 28px;
+    }
+
+    * { box-sizing: border-box; }
+    html, body { height: 100%; }
+    body{
+      margin: 0;
+      background: var(--bg);
+      color: var(--fg);
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
+    }
+
+    .wrap{
+      min-height: 100%;
+      display: grid;
+      place-items: center;
+      padding: var(--pad);
+    }
+    .footer a{
+      color: #000000;
+      #color: #FFFFFF;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    .footer a:hover{
+    text-decoration: underline;
+    color: #000000;
+    #color: #FFFFFF;
+    }
+    .hero{
+      text-align: center;
+      width: min(920px, 100%);
+    }
+
+    .logo{
+      display: block;
+      margin: 0 auto 18px auto;
+      width: min(var(--max-logo-w), 82vw);
+      height: auto;
+    }
+
+    .tagline{
+      font-size: clamp(18px, 2.2vw, 22px);
+      line-height: 1.35;
+      margin: 0 0 10px 0;
+      font-weight: 500;
+      letter-spacing: 0.2px;
+    }
+
+    .services{
+      font-size: clamp(16px, 1.7vw, 18px);
+      line-height: 1.5;
+      margin: 0;
+      color: var(--muted);
+      letter-spacing: 0.2px;
+    }
+
+    /* Page fade-in */
+    @media (prefers-reduced-motion: no-preference){
+      .hero{ animation: fadeIn 420ms ease-out both; }
+      @keyframes fadeIn { from { opacity: 0; transform: translateY(6px);} to { opacity: 1; transform: translateY(0);} }
+    }
+  </style>
+</head>
+
+<body>
+  <main class="wrap">
+    <section class="hero" aria-label="Penndale Group landing">
+      <img class="logo" src="./assets/penndale-logo-1.png" alt="Penndale Group logo" />
+      <p class="tagline">Technology consulting and services</p>
+      <p class="services">Enterprise Technology | Cybersecurity | Operational Resilience</p>
+      <br>
+    <footer class="footer">
+    <a href="mailto:info@penndale.com">info@penndale.com</a>
+    </footer>
+    </section>
+  </main>
+</body>
+</html>
